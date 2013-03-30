@@ -1,0 +1,16 @@
+{
+  "name": "arrr",
+  "version": "0.2.0",
+  "description": "Observable array",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/enome/arrr"
+  },
+  "keywords": [
+    "observable",
+    "array"
+  ],
+  "author": "Geert Pasteels",
+  "license": "BSD"
+}
