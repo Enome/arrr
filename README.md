@@ -15,4 +15,5 @@ collection.find('1234');
 collection.all();
 collection.update({ id: '1234', name: 'bar' }); // will insert if id isn't found
 collection.remove('1234');
+collection.clear(); // remove everything
 ```

@@ -84,6 +84,28 @@ describe('Arrr', function () {
 
   });
 
+  describe('clear', function () {
+
+    it('removes all the items', function () {
+
+      var array = [ { url: 'hi' }, { url: 'hello' }];
+      var data = arrr(array, 'url');
+      data.clear();
+      array.should.eql([]);
+
+    });
+
+    it('triggers on change event', function (done) {
+
+      var array = [ { url: 'hi' }, { url: 'hello' }];
+      var data = arrr(array, 'url');
+      data.clear();
+      data.on('change', done);
+
+    });
+
+  });
+
   describe('Update', function () {
     
     it('updates the item in the array', function () {

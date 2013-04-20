@@ -56,6 +56,11 @@ var arrr = function (array, id) {
       }
     },
 
+    clear: function () {
+      array.length = 0;
+      change();
+    },
+
     update: function (data) {
 
       var key;
